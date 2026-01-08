@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bwoo5iqpy36x"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Boat" type="Node2D" parent="."]
+position = Vector2(338, 176)
+
+[node name="Hull" type="Polygon2D" parent="Boat"]
+color = Color(0.55, 0.27, 0.1, 1)
+polygon = PackedVector2Array(-140, 40, 140, 40, 110, 90, -110, 90)
+
+[node name="Mast" type="Polygon2D" parent="Boat"]
+color = Color(0.25, 0.25, 0.25, 1)
+polygon = PackedVector2Array(-6, -100, 6, -100, 6, 40, -6, 40)
+
+[node name="Sail" type="Polygon2D" parent="Boat"]
+color = Color(0.95, 0.95, 0.9, 1)
+polygon = PackedVector2Array(0, -90, 110, -10, 0, 20)

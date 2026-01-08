@@ -12,5 +12,3 @@ Use *commit* messages written in the imperative:
 *   *Good:* `"Upgrade windows with resizing capabilities"`
 
 Your commit message should be the part that follows "This commit will ..."
-
-
