@@ -1,6 +1,5 @@
 # Agent Instructions
 You must respect established designs, requirements and functional instructions of all markdown files in the "doc/" folder.
-The markdown files in the "doc/" folder contain architectural, design and functional specification for specific aspects of the game.
 
 You must first devise a plan, before changing any files, and present that plan to the user.
 You must iterate on the plan with the user, until the user tells you to implement the plan.
@@ -18,6 +17,23 @@ When the user tells you to implement the plan, you can start making changes to t
 - You must, when you are done implementing, cross check the changes you made with the design and architecture impacts identified earlier.
 - If the impacts need to be updated, do so now. Try to leave them as is though unless they are clearly incorrect.
 - You must then ask the user if you are allowed to update the markdown files. Only do so if the user confirms.
+
+## Architecture and Design
+The markdown files in the "doc/" folder contain architectural, design and functional specification for specific aspects of the game.
+You must respect the design and architecture instructions in those files. You can read as many of them as you want, but you should try to keep the number of files read minimal and only load those that you actually think you'll need.
+
+This is a summary of the architecture and design documents:
+- "Project.md" describes the project structure in the file system. This file should always be read if you want to modifiy files and should never be changed.
+- "Architecture.md" describes the general, high level architecture of the game. Where to find which functionality, general guidelines etc.
+
+## Injectable Skills
+In the "Doc/Skills/" folder, you can find markdown files for a variety of skills. You can add these skills to your context at will, but use at most one skill at the same time.
+
+This is a summary of the skills, only load them if you actually need the skill.
+- "Refactoring.md" should be used when the user requested "clean up", "refactor" or similar actions.
+- "Testing.md" should be used when the user requested "new tests", "write tests", "add tests" or similar actions.
+- "Implementing.md" should be used when you are implementing a feature after the planning phase is complete.
+- "Planning.md" should be used when you are planning a feature before the user gives the go ahead for an implementation.
 
 ## Project Structure
 
