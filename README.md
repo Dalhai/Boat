@@ -1,6 +1,9 @@
 # Let's Build a Boat
 "Let's build a boat" is a 2D side scrolling game where you try to survive the rising ocean levels by building your own house-boat.
 
+## Background
+When the Great Melt came, the continents broke into drifting shards and the old cities slipped under the waves. Two brothers escaped on a half-finished workboat as the last evacuation sirens died, only to be carried into a rolling storm belt that never calms. With no ports left and nowhere to run, they have one choice: keep the boat alive by scavenging, building, and outlasting the sea.
+
 ### Naming Guidelines
 
 Name *branches* with your name and the feature name separated by a slash (`/`).
