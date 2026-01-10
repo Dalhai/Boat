@@ -1,4 +1,4 @@
 # Architecture
 
-## Entities
-- Fish: `Game/Entities/Fish/Fish.cs` handles WASD movement, bobbing, tail wag, and horizontal facing based on swim direction.
+## Important Scenes
+- Main: `Game/Main.tscn` is the root gameplay scene that anchors the world setup.
