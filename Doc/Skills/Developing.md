@@ -1,7 +1,6 @@
 # Instructions
 
 IMPORTANT! Updates to the existing plan:
-- Your plan must clearly state that you are NOT allowed to implement new logic.
 - Your plan must, as a last step, contain a call to `dotnet build` to check for errors.
 
 IMPORTANT! After formulating your plan, wait for user acknowledgement.
