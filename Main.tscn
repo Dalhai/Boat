@@ -1,9 +1,30 @@
-[gd_scene format=3 uid="uid://bwoo5iqpy36x"]
+[gd_scene load_steps=3 format=3 uid="uid://bwoo5iqpy36x"]
+
+[ext_resource type="Script" uid="uid://u8gsc40bidli" path="res://FluidSim.cs" id="1"]
+[ext_resource type="Script" uid="uid://fny8y5115l8d" path="res://FluidSolid2D.cs" id="2"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Boat" type="Node2D" parent="."]
-position = Vector2(338, 176)
+[node name="FluidSim" type="Node2D" parent="."]
+script = ExtResource("1")
+ParticleCountY = 30
+
+[node name="Boat" type="RigidBody2D" parent="."]
+position = Vector2(566, -144)
+
+[node name="FluidSolid" type="Node2D" parent="Boat"]
+script = ExtResource("2")
+FluidPath = NodePath("../../FluidSim")
+ShapePath = NodePath("../CollisionPolygon2D")
+SampleSpacing = 6.41
+SampleRadius = 15.71
+BuoyancyPerPenetration = 14.16
+MaxDownwardSpeed = 362.16
+ManualMass = 400.0
+StartDelay = 5.365
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Boat"]
+polygon = PackedVector2Array(-140, 40, 140, 40, 110, 90, -110, 90)
 
 [node name="Hull" type="Polygon2D" parent="Boat"]
 color = Color(0.55, 0.27, 0.1, 1)
